@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../constants/values.dart';
 
@@ -17,7 +18,7 @@ class Contact extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: defaultPadding),
           child: TextButton(
-            onPressed: () {},
+            onPressed: () async => await launch(curriculumPath),
             child: FittedBox(
               child: Row(
                 children: [
@@ -43,15 +44,15 @@ class Contact extends StatelessWidget {
               const Spacer(),
               IconButton(
                 icon: SvgPicture.asset('assets/icons/linkedin.svg'),
-                onPressed: () {},
+                onPressed: () async => await launch(ulrLinkedIn),
               ),
               IconButton(
                 icon: SvgPicture.asset('assets/icons/github.svg'),
-                onPressed: () {},
+                onPressed: () async => await launch(urlGitHub),
               ),
               IconButton(
                 icon: SvgPicture.asset('assets/icons/twitter.svg'),
-                onPressed: () {},
+                onPressed: () async => await launch(urlTwitter),
               ),
               const Spacer(),
             ],

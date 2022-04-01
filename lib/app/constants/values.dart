@@ -10,3 +10,10 @@ const bgColor = Color(0xFF1E1E28);
 const defaultPadding = 20.0;
 const defaultDuration = Duration(seconds: 1);
 const maxWidth = 1440.0;
+
+const curriculumPath = 'assets/docs/CV_EspejelSalazarCarlos.pdf';
+
+const ulrLinkedIn =
+    'https://www.linkedin.com/in/carlos-espejel-salazar-4a8655192/';
+const urlGitHub = 'https://github.com/CarlosEsp710';
+const urlTwitter = 'https://twitter.com/CarlosE80333449';
